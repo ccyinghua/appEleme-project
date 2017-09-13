@@ -3,7 +3,7 @@
 
 App.vue传入子组件的数据seller，因为是异步请求，传出的会是空对象，那seller.supports[0]就是未定义的，会报错，要加个 ==v-if== 判断，不存在就不会读取。
 
-```
+```javascript
 header.vue-子组件
 
 <div v-if="seller.supports" class="support">
@@ -19,7 +19,7 @@ props: {
 }
 ```
 
-```
+```javascript
 App.vue-父组件
 
 <template>
@@ -49,7 +49,7 @@ created() {
 - 用传入的size返回不同的类名(starType),写不同的样式区分
 - 传入的score分数，用计算属性对分数计算返回一个状态数组
 
-```
+```javascript
 header.vue
 <star :size="48" :score="seller.score"></star>
 
@@ -118,7 +118,7 @@ computed: {
 - 用传入的size返回不同的类名(iconType),写不同的样式区分
 - 传入的type获取不同的类型代表的类名，展现不同的样式
 
-```
+```javascript
 header.vue
 <icon :size="2" :type="seller.supports[index].type"></icon>
 

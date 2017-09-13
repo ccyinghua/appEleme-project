@@ -1,7 +1,7 @@
 # goods.vue商品组件
 > better-scroll滚动插件的用法     https://github.com/ustbhuangyi/better-scroll
 
-```
+```javascript
 1.在需要的文件添加
 import BScroll from 'better-scroll'
 
@@ -87,7 +87,7 @@ selectMenu(index, event) {     // 左侧menu点击事件
     1. item.foods.count并不是item.foods一开始就有的，当添加一个food不存在的属性时用==Vue.set==(this.food, 'count', 1); 变化就能被观测到，就能通知到DOM发生变化
 3. 改变了item.count对象的值，在父组件 goods.vue 利用计算属性动态生成购物车商品数据，然后通过props属性传递给shopcart.vue组件遍历生成列表
  
-```
+```javascript
 goods.vue
 <cartcontrol :food="food"></cartcontrol>
 
@@ -147,7 +147,7 @@ html:
 
      ![image](https://github.com/ccyinghua/appEleme-project/blob/master/resource/readme/goods/goods-img04.jpg?raw=true)
 
-```
+```javascript
 
 1. 小球是从点击的位置运动到左下角的购物车按钮处的
 2. 点击+图标时，传递点击的dom对象，通过 $emit 派发给父组件goods.vue
@@ -288,7 +288,7 @@ html:
 ```
 - #### 购物车列表显示隐藏
 
-```
+```javascript
 按钮控制 fold => fold 控制 => listShow ， listShow => 控制状态显示 (在totalCount>0)
 在 data 选项里，定义一个 fold（折叠，true） 控制购物车的显示隐藏状态
 在 computed 计算属性里，定义一个 listshow 方法，来表示购物车列表的显示隐藏状态
