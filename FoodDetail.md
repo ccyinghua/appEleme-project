@@ -75,7 +75,7 @@
     ```
 - #### 评论列表筛选显示
     
-    ```
+    ```javascript
     html:
     // 用v-show来控制评论是否显示
     <li v-show="needShow(rating.rateType,rating.text)" v-for="rating in food.ratings" class="rating-item border-1px"></li>
@@ -109,7 +109,7 @@
     ```
 - #### foodDetail.vue 商品详情页时间转换
     
-    ```
+    ```javascript
     1. 在 common 目录下创建一个公共工具函数 utils.js ,然后在需要用到的 组件中，进行 import 引入
         export function formatDate(date, fmt) {
             if (/(y+)/.test(fmt)) {
