@@ -135,7 +135,7 @@
         }
 
     2. 在 foodDetail 组件中使用,只需用 import 引入要使用到的 方法 即可
-        import { format } from 'common/js/utils'
+        import { formatDate } from 'common/js/utils'
     
     3. 在组件中即可直接使用 该方法
         code:
