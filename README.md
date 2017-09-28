@@ -36,8 +36,12 @@ cnpm install better-scroll --save-dev
 ### 项目脑图
 ![image](https://github.com/ccyinghua/appEleme-project/blob/master/resource/readme/vue.png?raw=true)
 
+> markdown文件说明
 
-
+- header.md - 头部组件开发说明
+- goods.md - 商品组件开发说明
+- foodDetail.md - 商品详情页组件说明
+- seller.md - 商家详情页组件说明
 
 
 
