@@ -38,10 +38,11 @@ cnpm install better-scroll --save-dev
 
 > markdown文件说明
 
-- header.md - 头部组件开发说明
-- goods.md - 商品组件开发说明
-- foodDetail.md - 商品详情页组件说明
-- seller.md - 商家详情页组件说明
+- [Mock.md - 模拟json数据](https://github.com/ccyinghua/appEleme-project/blob/master/01-Mock.md)
+- [Header.md - 头部组件开发说明](https://github.com/ccyinghua/appEleme-project/blob/master/02-Header.md)
+- [Goods.md - 商品组件开发说明](https://github.com/ccyinghua/appEleme-project/blob/master/03-Goods.md)
+- [FoodDetail.md - 商品详情页组件说明](https://github.com/ccyinghua/appEleme-project/blob/master/04-FoodDetail.md)
+- [Seller.md - 商家详情页组件说明](https://github.com/ccyinghua/appEleme-project/blob/master/05-Seller.md)
 
 ### 编译打包
 

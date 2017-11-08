@@ -1,5 +1,7 @@
 # goods.vue商品组件
-> better-scroll滚动插件的用法     https://github.com/ustbhuangyi/better-scroll
+> better-scroll滚动插件的用法
+https://github.com/ustbhuangyi/better-scroll <br>
+API：http://ustbhuangyi.github.io/better-scroll/doc/zh-hans/#better-scroll 是什么
 
 ```javascript
 1.在需要的文件添加
@@ -79,13 +81,15 @@ selectMenu(index, event) {     // 左侧menu点击事件
 }
 
 ```
+
 > cartcontrol.vue商品数量加减图标组件
 - #### 购物车计算属性的使用
 
 1. 将 item.foods 数据信息(对应商品信息)通过props属性传递给cartcontrol组件(子组件)
 2. 在cartcontrol组件中添加方法 addCart(增加商品数量)、decreaseCart(减少商品数量)改变item.foods.count的值
-    1. item.foods.count并不是item.foods一开始就有的，当添加一个food不存在的属性时用==Vue.set==(this.food, 'count', 1); 变化就能被观测到，就能通知到DOM发生变化
+    1. item.foods.count并不是item.foods一开始就有的，当添加一个food不存在的属性时用`Vue.set`(this.food, 'count', 1); 变化就能被观测到，就能通知到DOM发生变化
 3. 改变了item.count对象的值，在父组件 goods.vue 利用计算属性动态生成购物车商品数据，然后通过props属性传递给shopcart.vue组件遍历生成列表
+ 
  
 ```javascript
 goods.vue

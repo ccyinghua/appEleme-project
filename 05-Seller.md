@@ -2,7 +2,7 @@
 
 - #### 上下滚动better-scroll
     
-```
+```javascript
 1. seller页面也和goods和ratings页面一样，需要上下滑动
 2. 前面初始化better-scroll都是在生命周期created() {} (实例已经创建完成，属性已经绑定)内
 3. seller页面我们需要在生命周期 mounted (模板编译之后,DOM渲染好之后)中初始化
@@ -47,7 +47,7 @@ methods: {
 ```
 - #### 商家实景图片左右滚动
 
-```
+```javascript
 1. 先根据图片尺寸和左右 margin 计算出 list 列表容器的 宽度，然后 用 better-scroll 进行左右滚动
 
 2. 跟上下滚动一样，一般情况下，要在 vue mounted 之后就可以初始化 better-scroll 
@@ -100,7 +100,7 @@ methods:{
 ```
 - #### 用localStorage本地收藏商家
 
-```
+```javascript
 >  先给商家模拟添加一个id值放在url中，http://localhost:8080/?id=12345&a=b#/goods
 >  然后解析url获取id值添加到this.seller
 >  根据每个商家独有的id值进行收藏
@@ -157,7 +157,7 @@ created() {
 
 ```
 
-```
+```javascript
 1. 在　common/js/util.js 文件里创建两个公共函数函数 存储 localStorae 和 读取 localStorage 
 2. 在点击收藏按钮时，调用存储 方法，首次进入页面时，调用 读取方法
 

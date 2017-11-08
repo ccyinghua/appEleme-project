@@ -1,9 +1,9 @@
 # header组件开发
 > 为什么加v-if
 
-App.vue传入子组件的数据seller，因为是异步请求，传出的会是空对象，那seller.supports[0]就是未定义的，会报错，要加个 ==v-if== 判断，不存在就不会读取。
+App.vue传入子组件的数据seller，因为是异步请求，传出的会是空对象，那seller.supports[0]就是未定义的，会报错，要加个 **`v-if`** 判断，不存在就不会读取。
 
-```javascript
+```html
 header.vue-子组件
 
 <div v-if="seller.supports" class="support">
@@ -11,7 +11,7 @@ header.vue-子组件
   <span class="text">{{seller.supports[0].description}}</span>
 </div>
 
-==> 父组件传来的==数据需要props注册==
+==> 父组件传来的 **数据需要props注册**
 props: {
     seller: {
       type: Object
@@ -45,7 +45,7 @@ created() {
 ```
 > star.vue-五角星子组件
 
-五角星在页面中出现过很多次，只不过有些大小不同，做成组件方便直接使用；需要传给star组件大小 ==size== 和分数 ==score==
+五角星在页面中出现过很多次，只不过有些大小不同，做成组件方便直接使用；需要传给star组件大小 **`size`** 和分数 **`score`**
 - 用传入的size返回不同的类名(starType),写不同的样式区分
 - 传入的score分数，用计算属性对分数计算返回一个状态数组
 
@@ -114,7 +114,7 @@ computed: {
 ```
 > icon.vue-优惠图标组件
 
-与star.vue组件类似，在页面中出现过很多次，需要传给icon组件大小 ==size== 和图标的类型 ==type==
+与star.vue组件类似，在页面中出现过很多次，需要传给icon组件大小 **`size`** 和图标的类型 **`type`**
 - 用传入的size返回不同的类名(iconType),写不同的样式区分
 - 传入的type获取不同的类型代表的类名，展现不同的样式
 
